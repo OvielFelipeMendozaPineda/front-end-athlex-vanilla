@@ -15,7 +15,8 @@ export class Footer extends HTMLElement {
                 .container {
                     width: 100%;
                     height: 100%;
-                    padding: 5rem;
+                    padding: 5rem 0;
+                    padding-left: 10rem;
                     background-color: #151515;
                     display: flex;
                     flex-direction: column; /* Ajuste para mejor adaptación en pantallas pequeñas */
@@ -105,6 +106,9 @@ export class Footer extends HTMLElement {
                     .row {
                         gap: 2rem;
                         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    }
+                    .container {
+                    padding: 5rem;
                     }
                 }
             </style>
