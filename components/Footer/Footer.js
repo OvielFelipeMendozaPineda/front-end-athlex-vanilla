@@ -5,11 +5,13 @@ export class Footer extends HTMLElement {
     }
     
     async render() {
-        this.innerHTML = `
+        this.innerHTML =  `
             <style>
                 footer {
                     width: 100%;
                     display: flex;
+                    height: auto;
+                    flex-grow: 1;
                 }
 
                 .container {

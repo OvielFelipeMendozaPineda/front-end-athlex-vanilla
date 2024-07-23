@@ -13,7 +13,8 @@ export class NavBar extends HTMLElement {
             top: 5px; 
             padding: 1.5rem;
             background-color: transparent; 
-            transition: .5s
+            transition: .5s;
+            z-index: 10000;
         }
         .sticky {
             position: fixed;
@@ -76,7 +77,7 @@ export class NavBar extends HTMLElement {
             border-bottom: 1px solid  #E2CA60 ;
         }
 
-        .navlinks  #get-started {
+        .navlinks  #log-in {
             font-size: 1.4rem;
             border: 1px solid #E2CA60;
             border-radius: 10px;
@@ -86,7 +87,7 @@ export class NavBar extends HTMLElement {
             color: #E2CA60;
         }
 
-        .navlinks  #get-started:hover {
+        .navlinks  #log-in:hover {
             background-color: rgba(249, 227, 131, 0.164);
             cursor: pointer;
         }
@@ -108,7 +109,7 @@ export class NavBar extends HTMLElement {
                     <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li id="get-started">Ingresar</li>
+                    <li id="log-in">Ingresar</li>
                 </ul>
                 <button class="menu-btn expanded">☰</button>
             </nav>
