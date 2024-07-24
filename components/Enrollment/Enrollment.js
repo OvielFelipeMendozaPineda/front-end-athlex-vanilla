@@ -20,22 +20,24 @@ export class Enrollment extends HTMLElement {
         .rol-selector{
             display: flex;
             flex-direction: row;
-            justify-content: center ;
+            justify-content: space-evenly ;
             align-items: center;
             width: 100%;
+            /* transform: translateX(-45px); */
         }
         .rol{
             /* background-color: beige; */
             height: auto;
             display: grid;
             gap: 1.5rem;
+            max-width: 300px;
 
         }
         .rol:hover {
             cursor: pointer;
         }
         .rol-icon{
-            width: 200px;
+            width: 250px;
             justify-self: center;
 
         }
@@ -49,6 +51,7 @@ export class Enrollment extends HTMLElement {
         }
         .rol-title h2 {
             text-align: center;
+            font-size: 2.7rem;
             font-weight: 600;
         }
         .rol-description {
@@ -58,7 +61,6 @@ export class Enrollment extends HTMLElement {
         .rol-desciption p {
             width: 100%;
             text-align: justify;
-            font-weight: 100;
         }
         .register-btn{
             width: 100%;
@@ -78,8 +80,22 @@ export class Enrollment extends HTMLElement {
             background-color: rgba(255, 255, 255, 0.115);
             cursor: pointer;
         }
+        .mid-icon{
+            width: 400px;
+        }
+        .mid-icon img{
+            width: 100%;
+            height: 100%;
+        }
+        #log-in{
+            display: none;
+        }
+        header{
+            position: absolute !important; 
+        }
 
         </style>
+        <nav-bar></nav-bar>   
         <section class="enroll">
             <div class="rol-selector">
                 <div class="rol">
@@ -96,18 +112,19 @@ export class Enrollment extends HTMLElement {
                         <button id="player-register-btn"> Registrarme </button>
                     </div>
                 </div>
-                <div class="mid icon">
+                <div class="mid-icon">
                     <img src="storage/imgs/icons/mid-icon-rol-selector.png" alt="">
                 </div>
                 <div class="rol">
                     <div class="rol-icon">
-                        <img src="storage/imgs/icons/football-club.png" alt="">
+                        <!-- <img src="storage/imgs/icons/football-club.png" alt=""> -->
+                         <img src="storage/imgs/icons/strategy.png" alt="">
                     </div>
                     <div class="rol-title">
-                        <h2> Ser jugador </h2>
+                        <h2> Ser club </h2>
                     </div>
                     <div class="rol-description">
-                        <p> Accede a grandes oportunidades nacionales e internacionales </p>
+                        <p> Encuentra talentos de talla mundial </p>
                     </div>
                     <div class="register-btn">
                         <button id="player-register-btn"> Registrarme </button>
