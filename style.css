@@ -24,75 +24,79 @@ body {
 
 /* componente */
 
-.enroll{
+.sign-up{
     width: 100%;
     height: 100vh;
-    background-image: url(storage/imgs/icons/rol-selector-bg.png) ;
-    background-size: cover;
-    background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.sign-up__form{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 2rem;
     color: white;
 }
-.rol-selector{
+.sign-up__header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up__title{
+    font-size: 2.7rem;
+}
+.sign-up__social-icons{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center ;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    gap: 2rem   ;
 }
-.rol{
-    /* background-color: beige; */
-    height: auto;
-    display: grid;
+.bx{
+    font-size: 40px;
+}
+.sign-up__body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.sign-up__input {
+    border-radius: 5px;
+    padding: .5rem;
+    border: none;
+    margin: 0 .5rem ;
+}
+.sign-up__input:focus {
+    border: none;
+    outline: none;
+}
+.sign-up__terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
-
 }
-.rol:hover {
-    cursor: pointer;
-}
-.rol-icon{
-    width: 200px;
-    justify-self: center;
-
-}
-.rol-icon img{
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow( 5px 5px 5px #222222);
-}
-.rol-title{
-    width: 100%;
-}
-.rol-title h2 {
-    text-align: center;
-    font-weight: 600;
-}
-.rol-description {
-    width: 80%;
-    place-self: center;
-}
-.rol-desciption p {
-    width: 100%;
-    text-align: justify;
-    font-weight: 100;
-}
-.register-btn{
+.sign-up__actions {
     width: 100%;
     display: grid;
-    margin-bottom: 1rem;
+    place-items: center;
 }
-.register-btn #player-register-btn{
-    justify-self: center;
-    border: 1.5px solid white;
-    border-radius: 15px;
-    background-color: transparent;
-    padding: 0.5rem 2.24rem ;
-    font-size: 1rem;
-    color: white;
+.sign-up__button{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px ;
+    background-color: 
+    #E2CA60;
+    font-weight: 600;
+    transition: 300ms ease;
 }
-.register-btn  #player-register-btn:hover {
-    background-color: rgba(255, 255, 255, 0.115);
+.sign-up__button:hover{
+    background-color: #e8d271;
+    transition: 300ms ease;
     cursor: pointer;
 }

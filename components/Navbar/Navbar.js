@@ -100,7 +100,7 @@ export class NavBar extends HTMLElement {
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <a href="#" class="logo-link">
+                    <a href="./index.html" class="logo-link">
                         <img src="storage/imgs/icons/athlec nobg.png" alt="Athlex" class="main-logo"/>
                     </a>
                 </div>
