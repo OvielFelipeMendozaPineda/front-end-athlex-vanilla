@@ -4,11 +4,7 @@ import './components/HeroSection/HeroSection.js'
 import './components/Cards/Cards.js'
 import './components/Enrollment/Enrollment.js'
 import './components/SignUpForm/PlayerSignUpForm.js'
+import './components/SignUpSection/SignUpSection.js'
+import './components/SignUpFigure/SignUpFigure.js'
 
-const root = document.querySelector("#root")
-const getStartedBtn = document.querySelector('#get-started')
-console.log(getStartedBtn);
-getStartedBtn.addEventListener('click', (e) => {
-    root.innerHTML = '<enrollment-selector></enrollment-selector>'
 
-})

@@ -2,6 +2,7 @@ export class Enrollment extends HTMLElement {
     constructor() {
         super();
         this.render();
+        this.showSignUpSection();
     }
 
     connectedCallback() {
@@ -13,7 +14,13 @@ export class Enrollment extends HTMLElement {
             }, index * 100); 
         });
     }
-
+    async showSignUpSection() {
+        const root = document.querySelector("#root");
+        const playerRegisterBtn = document.querySelector("#player-register-btn")
+        playerRegisterBtn.addEventListener("click", (e) => {
+            root.innerHTML =` <signup-section></signup-section>`
+        })
+    }
     async render() {
         this.innerHTML = `
         <style>
