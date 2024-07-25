@@ -1,9 +1,27 @@
 export class SignUpForm extends HTMLElement {
 constructor() {
-super()
-this.render()
+    super();
+    this.render();
+    this.saveData();
 }
-
+async saveData() {
+    const playerForm = document.querySelector("#player-form");
+    playerForm.addEventListener("submit", (e) => {
+        const playerFormData = new Form(Object.fromEntries(playerForm))
+        fetch('./storage/Json/playerData.json', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'applicatons/json'
+            },
+            body: JSON.stringify(playerFormData)
+        })
+        .then(response => response.json())
+        .then(data => console.log("se envio" + data))
+        .catch((error) => {
+            console.log(error);
+        })
+    })
+}
 async render() {
 this.innerHTML = ` <style>
     
@@ -36,8 +54,7 @@ this.innerHTML = ` <style>
     .sign-up__header {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        align-items: center;
+        gap: 1rem;        align-items: center;
         justify-content: center;
     }
 
@@ -107,7 +124,7 @@ this.innerHTML = ` <style>
         cursor: pointer;
     }
 </style>
-<form action="" method"post" class="sign-up__form">
+<form action="" method"post" class="sign-up__form" id="player-form">
     <div class="sign-up__header">
         <h1 class="sign-up__title">Registrarse</h1>
         <div class="sign-up__social-icons"><a href="" class="sign-up__social-icon sign-up__social-icon--facebook"><i
