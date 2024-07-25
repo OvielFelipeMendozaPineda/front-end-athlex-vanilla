@@ -24,6 +24,9 @@ export class Enrollment extends HTMLElement {
     async render() {
         this.innerHTML = `
         <style>
+        body {
+            background-color: #151515;
+        }
         .enroll {
             width: 100%;
             height: 100vh;
