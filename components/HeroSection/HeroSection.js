@@ -7,7 +7,6 @@ export class HeroSection extends HTMLElement {
     async renderEnrollment() {
         const root = document.querySelector("#root")
         const getStartedBtn = document.querySelector('#get-started')
-        console.log(getStartedBtn);
         getStartedBtn.addEventListener('click', (e) => {
             root.innerHTML = '<enrollment-selector></enrollment-selector>'
 
@@ -63,6 +62,7 @@ export class HeroSection extends HTMLElement {
             padding: 0.5rem 1rem;
             transition: background-color 0.3s;
             font-weight: 600;
+            border: none;
         }
 
         .hero-section #get-started:hover {
