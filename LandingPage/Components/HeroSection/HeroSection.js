@@ -68,7 +68,7 @@ export class HeroSection extends HTMLElement {
                     <h2>Descubre el Futuro del Fútbol</h2>
                     <p>Sube tus videos y muestra tu talento al mundo</p>
                     <br>
-                    <button id="get-started"> <a href="../../../Login/register.html"> Empezar ahora</a> </button>
+                    <button id="get-started"> <a href="./Login/register.html"> Empezar ahora</a> </button>
                 </div>
             </div>
         `

@@ -257,7 +257,7 @@ export class Enrollment extends HTMLElement {
         <div class="rol-selector">
             <div class="rol">
                 <div class="rol-icon">
-                    <img src="storage/imgs/icons/soccer-player.png" alt="No disp.">
+                    <img src="./storage/icons/soccer-player.png" alt="No disp.">
                 </div>
                 <div class="rol-title">
                     <h2>Ser jugador</h2>
@@ -270,11 +270,11 @@ export class Enrollment extends HTMLElement {
                 </div>
             </div>
             <div class="mid-icon">
-                <img src="storage/imgs/icons/mid-icon-rol-selector.png" alt="">
+                <img src="./storage/icons/mid-icon-rol-selector.png" alt="">
             </div>
             <div class="rol">
                 <div class="rol-icon">
-                    <img src="storage/imgs/icons/strategy.png" alt="">
+                    <img src="./storage/icons/strategy.png" alt="">
                 </div>
                 <div class="rol-title">
                     <h2>Ser club</h2>
