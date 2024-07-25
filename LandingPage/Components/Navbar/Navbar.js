@@ -101,7 +101,7 @@ export class NavBar extends HTMLElement {
             <nav class="navbar">
                 <div class="logo">
                     <a href="./index.html" class="logo-link">
-                        <img src="storage/logos/header__logo.png" alt="Athlex" class="main-logo"/>
+                        <img src="LandingPage/storage/logos/header__logo.png" alt="Athlex" class="main-logo"/>
                     </a>
                 </div>
                 <ul class="navlinks">

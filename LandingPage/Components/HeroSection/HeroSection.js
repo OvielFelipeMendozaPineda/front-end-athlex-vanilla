@@ -20,7 +20,7 @@ export class HeroSection extends HTMLElement {
 
         }
         body {
-            background-image: url('storage/imgs/icons/kickoff-the-football-season-with-comfortable-cleats-6xyoye4hw1zj1cav.jpg');
+            background-image: url('LandingPage/storage/backgrounds/landing-page-bg.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
