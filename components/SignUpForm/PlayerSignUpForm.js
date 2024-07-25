@@ -7,21 +7,28 @@ constructor() {
 async saveData() {
     const playerForm = document.querySelector("#player-form");
     playerForm.addEventListener("submit", (e) => {
-        const playerFormData = new Form(Object.fromEntries(playerForm))
-        fetch('./storage/Json/playerData.json', {
+        e.preventDefault(); 
+
+        const formData = new FormData(playerForm);
+        const playerFormData = Object.fromEntries(formData.entries());
+
+        fetch('/storage/Json/playerData.json', {
             method: "POST",
             headers: {
-                'Content-Type': 'applicatons/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(playerFormData)
         })
         .then(response => response.json())
-        .then(data => console.log("se envio" + data))
-        .catch((error) => {
-            console.log(error);
+        .then(data => {
+            console.log("Se envió: " + data);
         })
-    })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
+    });
 }
+
 async render() {
 this.innerHTML = ` <style>
     
