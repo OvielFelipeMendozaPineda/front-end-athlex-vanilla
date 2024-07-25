@@ -62,6 +62,10 @@ export class HeroSection extends HTMLElement {
             background-color: rgb(249, 227, 131);
             cursor: pointer;
         }
+        #get-started a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
             </style>
             <div class="hero-section">
                 <div class="text">

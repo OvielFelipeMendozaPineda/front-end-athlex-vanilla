@@ -34,6 +34,7 @@ export class SignUpForm extends HTMLElement {
         border: 1px solid rgb(52, 52, 52);
         box-shadow: 5px 5px 15px #000000bb;
         animation: slideIn 0.5s ease-out;
+        margin: 2rem;
     }
 
     @keyframes slideIn {
@@ -57,7 +58,7 @@ export class SignUpForm extends HTMLElement {
     }
 
     .sign-up__title {
-        font-size: 2.7rem;
+        font-size: clamp(1rem, 5vw, 2.7rem);
     }
 
     .sign-up__social-icons {
@@ -79,12 +80,16 @@ export class SignUpForm extends HTMLElement {
         gap: 1rem;
         margin: 1rem 0;
     }
-
+    .sign-up__input-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
     .sign-up__input {
         border-radius: 5px;
         padding: 1rem;
         border: none;
-        margin: 0 .5rem;
+        width: 100%;
     }
 
     .sign-up__input:focus {
