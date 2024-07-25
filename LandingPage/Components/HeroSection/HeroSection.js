@@ -20,7 +20,7 @@ export class HeroSection extends HTMLElement {
 
         }
         body {
-            background-image: url('https://media.discordapp.net/attachments/1182006741320335382/1264909868855328778/kickoff-the-football-season-with-comfortable-cleats-6xyoye4hw1zj1cav.jpg?ex=669f969d&is=669e451d&hm=d33dfc894135daea4dad217c4ec646b6c689be0ab7c4acbd6569a91003a13e4d&=&format=webp&width=1007&height=671');
+            background-image: url('storage/imgs/icons/kickoff-the-football-season-with-comfortable-cleats-6xyoye4hw1zj1cav.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
