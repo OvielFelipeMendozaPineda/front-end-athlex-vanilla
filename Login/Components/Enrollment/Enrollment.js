@@ -250,41 +250,45 @@ export class Enrollment extends HTMLElement {
       }
     </style>
         <nav-bar></nav-bar>
-        <section class="enroll">
-            <div class="rol-selector">
-                <div class="rol">
-                    <div class="rol-icon">
-                        <img src="storage/imgs/icons/soccer-player.png" alt="No disp.">
-                    </div>
-                    <div class="rol-title">
-                        <h2>Ser jugador</h2>
-                    </div>
-                    <div class="rol-description">
-                        <p>Accede a grandes oportunidades nacionales e internacionales</p>
-                    </div>
-                    <div class="register-btn">
-                        <button id="player-register-btn">Registrarme</button>
-                    </div>
+
+    <div class="container">
+      <div class="section right"></div>
+      <section class="enroll">
+        <div class="rol-selector">
+            <div class="rol">
+                <div class="rol-icon">
+                    <img src="storage/imgs/icons/soccer-player.png" alt="No disp.">
                 </div>
-                <div class="mid-icon">
-                    <img src="storage/imgs/icons/mid-icon-rol-selector.png" alt="">
+                <div class="rol-title">
+                    <h2>Ser jugador</h2>
                 </div>
-                <div class="rol">
-                    <div class="rol-icon">
-                        <img src="storage/imgs/icons/strategy.png" alt="">
-                    </div>
-                    <div class="rol-title">
-                        <h2>Ser club</h2>
-                    </div>
-                    <div class="rol-description">
-                        <p>Encuentra talentos de talla mundial</p>
-                    </div>
-                    <div class="register-btn">
-                        <button id="player-register-btn">Registrarme</button>
-                    </div>
+                <div class="rol-description">
+                    <p>Accede a grandes oportunidades nacionales e internacionales</p>
+                </div>
+                <div class="register-btn">
+                    <button id="player-register-btn">Registrarme</button>
                 </div>
             </div>
-        </section>
+            <div class="mid-icon">
+                <img src="storage/imgs/icons/mid-icon-rol-selector.png" alt="">
+            </div>
+            <div class="rol">
+                <div class="rol-icon">
+                    <img src="storage/imgs/icons/strategy.png" alt="">
+                </div>
+                <div class="rol-title">
+                    <h2>Ser club</h2>
+                </div>
+                <div class="rol-description">
+                    <p>Encuentra talentos de talla mundial</p>
+                </div>
+                <div class="register-btn">
+                    <button id="player-register-btn">Registrarme</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
         `;
     }
 }
