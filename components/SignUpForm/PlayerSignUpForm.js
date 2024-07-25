@@ -12,20 +12,7 @@ async saveData() {
         const formData = new FormData(playerForm);
         const playerFormData = Object.fromEntries(formData.entries());
 
-        fetch('/storage/Json/playerData.json', {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(playerFormData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Se envió: " + data);
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-        });
+        console.log(playerFormData);
     });
 }
 
