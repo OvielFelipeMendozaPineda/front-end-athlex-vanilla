@@ -1,3 +1,4 @@
+
 export class Enrollment extends HTMLElement {
     constructor() {
         super();
@@ -263,7 +264,7 @@ export class Enrollment extends HTMLElement {
         <div class="rol-selector">
             <div class="rol">
                 <div class="rol-icon">
-                    <img src="./storage/icons/soccer-player.png" alt="No disp.">
+                    <img src="./storage/icons/soccer-player-2.png" alt="No disp.">
                 </div>
                 <div class="rol-title">
                     <h2>Ser jugador</h2>

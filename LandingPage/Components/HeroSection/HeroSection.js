@@ -29,7 +29,7 @@ export class HeroSection extends HTMLElement {
         .hero-section .text {
             align-self: self-end;
             padding: 5rem 0;
-            padding-left: 17rem;
+            padding-left: 16rem;
             color: white;
         }
 
