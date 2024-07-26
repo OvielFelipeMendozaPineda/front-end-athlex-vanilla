@@ -30,7 +30,10 @@ export class Enrollment extends HTMLElement {
         padding: 0;
         height: 100%;
         font-family: Arial, sans-serif;
-        background-color: #1a1f25;
+        background-image: url('storage/backgrounds/rol-selector-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
       }
 
       .container {
@@ -249,10 +252,9 @@ export class Enrollment extends HTMLElement {
         position: absolute !important;
       }
     </style>
-        <nav-bar></nav-bar>
+    <nav-bar></nav-bar>
 
     <div class="container">
-      <div class="section right"></div>
       <section class="enroll">
         <div class="rol-selector">
             <div class="rol">
