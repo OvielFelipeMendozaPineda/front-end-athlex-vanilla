@@ -31,7 +31,7 @@ export class Enrollment extends HTMLElement {
         padding: 0;
         height: 100%;
         font-family: Arial, sans-serif;
-        background-image: url('storage/backgrounds/rol-selector-bg.png');
+        background-image: url('../storage/image/background/login__bg.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -266,7 +266,7 @@ export class Enrollment extends HTMLElement {
         <div class="rol-selector">
             <div class="rol">
                 <div class="rol-icon">
-                    <img src="./storage/icons/soccer-player-2.png" alt="No disp.">
+                    <img src="../storage/image/icon/login__soccer-player-icon.png" alt="No disp.">
                 </div>
                 <div class="rol-title">
                     <h2>Ser jugador</h2>
@@ -279,11 +279,11 @@ export class Enrollment extends HTMLElement {
                 </div>
             </div>
             <div class="mid-icon">
-                <img src="./storage/icons/mid-icon-rol-selector.png" alt="">
+                <img src="../storage/image/icon/login__mid-icon.png" alt="">
             </div>
             <div class="rol">
                 <div class="rol-icon">
-                    <img src="./storage/icons/strategy.png" alt="">
+                    <img src="../storage/image/icon/login__club-img.png" alt="">
                 </div>
                 <div class="rol-title">
                     <h2>Ser club</h2>

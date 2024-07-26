@@ -20,7 +20,7 @@ export class HeroSection extends HTMLElement {
 
         }
         body {
-            background-image: url('LandingPage/storage/backgrounds/landing-page-bg.jpg');
+            background-image: url('storage/image/background/landing-page-hero-section__bg.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
