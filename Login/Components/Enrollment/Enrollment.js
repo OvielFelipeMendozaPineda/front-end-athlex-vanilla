@@ -1,4 +1,4 @@
-
+import '../../../LandingPage/Components/Navbar/Navbar.js'
 export class Enrollment extends HTMLElement {
     constructor() {
         super();
