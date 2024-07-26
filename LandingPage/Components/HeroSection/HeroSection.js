@@ -29,7 +29,7 @@ export class HeroSection extends HTMLElement {
         .hero-section .text {
             align-self: self-end;
             padding: 5rem 0;
-            padding-left: 17rem;
+            padding-left: 16rem;
             color: white;
         }
 
@@ -61,6 +61,10 @@ export class HeroSection extends HTMLElement {
         .hero-section #get-started:hover {
             background-color: rgb(249, 227, 131);
             cursor: pointer;
+        }
+        #get-started a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
         }
             </style>
             <div class="hero-section">

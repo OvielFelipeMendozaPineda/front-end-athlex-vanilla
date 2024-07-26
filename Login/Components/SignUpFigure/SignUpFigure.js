@@ -34,22 +34,26 @@ export class SignUpFigure extends HTMLElement {
         display: grid;
         place-items: center;
         color: white;
+        padding: 0 1rem;
     }
 
     .figure__header__title {
-        font-size: 2.7rem;
+        font-size: clamp(1rem, 5vw, 2.7rem);
+        text-align: center;
     }
-
+    .--smaller{
+        font-size: clamp(.5rem, 5vw, 1rem);
+    }
     .figure__header__description {
-        font-size: 1rem;
         font-weight: 300;
+        text-align: center;
     }
         </style>
         <div class="figure">
             <div class="figure__header">
                 <h2 class="figure__header__title"> !Hola,
                     soñador !</h2>
-                <p class="figure__header__description">Registrate y lucha por cumplir tus sueños </p>
+                <p class="figure__header__description --smaller">Registrate y lucha por cumplir tus sueños </p>
             </div>
         </div>
         `

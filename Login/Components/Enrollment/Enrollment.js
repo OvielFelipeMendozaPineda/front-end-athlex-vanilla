@@ -1,3 +1,4 @@
+import '../../../LandingPage/Components/Navbar/Navbar.js'
 export class Enrollment extends HTMLElement {
     constructor() {
         super();
@@ -129,6 +130,7 @@ export class Enrollment extends HTMLElement {
         animation: fadeOut 1s forwards;
       }
 
+
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -184,7 +186,7 @@ export class Enrollment extends HTMLElement {
       }
 
       .rol-icon {
-        width: 250px;
+        width: clamp(15px, 15vw, 200px);
         justify-self: center;
       }
 
@@ -200,20 +202,24 @@ export class Enrollment extends HTMLElement {
 
       .rol-title h2 {
         text-align: center;
-        font-size: 2.7rem;
+        font-size: clamp(1rem, 2vw, 2.7rem);
         font-weight: 600;
       }
 
       .rol-description {
         width: 80%;
         place-self: center;
+        text-align: center;
       }
 
       .rol-desciption p {
         width: 100%;
         text-align: justify;
+        font-size: .5rem !important
       }
-
+      .smaller {
+        font-size: clamp(.5rem, 1vw, 1.5rem);
+      }
       .register-btn {
         width: 100%;
         display: grid;
@@ -226,7 +232,8 @@ export class Enrollment extends HTMLElement {
         border-radius: 15px;
         background-color: transparent;
         padding: 0.5rem 2.24rem;
-        font-size: 1rem;
+        font-weight: 600;
+        font-size: clamp(.5rem, 1vw, 1rem);
         color: white;
       }
 
@@ -236,7 +243,7 @@ export class Enrollment extends HTMLElement {
       }
 
       .mid-icon {
-        width: 400px;
+        width: clamp(150px, 30vw, 400px);
       }
 
       .mid-icon img {
@@ -259,13 +266,13 @@ export class Enrollment extends HTMLElement {
         <div class="rol-selector">
             <div class="rol">
                 <div class="rol-icon">
-                    <img src="./storage/icons/soccer-player.png" alt="No disp.">
+                    <img src="./storage/icons/soccer-player-2.png" alt="No disp.">
                 </div>
                 <div class="rol-title">
                     <h2>Ser jugador</h2>
                 </div>
                 <div class="rol-description">
-                    <p>Accede a grandes oportunidades nacionales e internacionales</p>
+                    <p class="smaller">Accede a grandes oportunidades nacionales e internacionales</p>
                 </div>
                 <div class="register-btn">
                     <button id="player-register-btn">Registrarme</button>
@@ -282,7 +289,7 @@ export class Enrollment extends HTMLElement {
                     <h2>Ser club</h2>
                 </div>
                 <div class="rol-description">
-                    <p>Encuentra talentos de talla mundial</p>
+                    <p class="smaller">Encuentra talentos de talla mundial</p>
                 </div>
                 <div class="register-btn">
                     <button id="player-register-btn">Registrarme</button>
